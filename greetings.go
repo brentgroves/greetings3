@@ -22,6 +22,7 @@ func Hello(name string) (string, error) {
 func Hellos(names []string) (map[string]string, error) {
 	// A map to associate names with messages.
 	messages := make(map[string]string)
+
 	// Loop through the received slice of names, calling
 	// the Hello function to get a message for each name.
 	for _, name := range names {
