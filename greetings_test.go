@@ -9,6 +9,7 @@ import (
 // for a valid return value.
 func TestHelloName(t *testing.T) {
 	name := "Gladys"
+	// expected string
 	want := regexp.MustCompile(`\b` + name + `\b`)
 	msg, err := Hello("Gladys")
 	if !want.MatchString(msg) || err != nil {
